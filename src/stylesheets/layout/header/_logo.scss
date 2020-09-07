@@ -1,0 +1,15 @@
+.app-logo {
+  @include grid-container(1em);
+  @include two-sides-padded-container(2em, 1.5em);
+  grid-template-columns: auto auto;
+  align-items: center;
+  text-transform: uppercase;
+  span.head {
+    font-weight: 800;
+    color: var(--sunflower);
+  }
+  span.tail {
+    font-weight: 300;
+    color: #fff;
+  }
+}

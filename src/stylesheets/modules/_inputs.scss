@@ -1,0 +1,16 @@
+input,
+select,
+textarea {
+  width: 100%;
+  resize: vertical;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+textarea {
+  min-height: 100px;
+}
+label {
+  display: block;
+}

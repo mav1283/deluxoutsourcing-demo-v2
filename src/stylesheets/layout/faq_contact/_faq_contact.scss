@@ -1,0 +1,30 @@
+.faq-contact {
+  @include grid-container(4em);
+  @extend .secondary-bg;
+  justify-content: center;
+  div {
+    max-width: 768px;
+  }
+  .faq-headline {
+    @include grid-container(2em);
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    // max-width: 100ch;
+    h1 {
+      font-size: calc(3.25rem - 1vw);
+    }
+    .paragraphs {
+      @include grid-container(1em);
+      p {
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.5;
+      }
+    }
+  }
+  .faq-form-area {
+    @extend .flex;
+    justify-content: center;
+  }
+}
