@@ -1,4 +1,5 @@
 import React from "react";
+import { useRouteMatch } from "react-router-dom";
 import Hero from "../layout/section_templates/Hero";
 import bgImage from "../../assets/images/austin-distel-97HfVpyNR1M-unsplash.jpg";
 
@@ -18,8 +19,11 @@ import certificates from "../dummies/certificates";
 import hiwsteps from "../dummies/hiwsteps";
 
 function Home() {
+  let match = useRouteMatch();
+  const pageId = match.url.slice(1);
+
   return (
-    <div>
+    <div id={pageId} className="page no-padding">
       <Hero
         headline="Lorem Ipsum Dolor Sit Amet, Verbatim"
         subheadline="This is a sub headline"

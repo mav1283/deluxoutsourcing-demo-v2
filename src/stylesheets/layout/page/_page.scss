@@ -1,0 +1,6 @@
+.page {
+  @include uniform-sides-padded-container(2em);
+}
+.no-padding {
+  padding: 0;
+}

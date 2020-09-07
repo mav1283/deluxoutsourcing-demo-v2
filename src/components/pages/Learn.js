@@ -1,7 +1,14 @@
-import React from 'react';
+import React from "react";
+import { useRouteMatch } from "react-router-dom";
 
 function Learn() {
-  return <div>Learn</div>;
+  let match = useRouteMatch();
+  const pageId = match.url.slice(1);
+  return (
+    <div id={pageId} className="page">
+      Learn
+    </div>
+  );
 }
 
 export default Learn;
